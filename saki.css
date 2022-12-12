@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+ html,body{
+    display: grid;
+    height: 100%;
+   place-items: center;
+   background-color: black;
+}
+.saki{
+   height: 100px;
+   width: 400px;
+   background: linear-gradient(135deg,rgb(233, 106, 226),rgb(40, 241, 124),rgb(75, 227, 247));
+   border-radius: 14px;
+  cursor: default;
+  animation: 1.3s linear infinite;
+}
+.saki .saki1{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     background: rgb(27, 27, 29);
+     height: 85px;
+     width: 385px;
+     border-radius: 6px;
+     text-align: center;
+    z-index: 999;
+}
+.saki .saki1 #saki2{
+     line-height: 85px;
+     color: rgb(81, 141, 141);
+     font-size: 50px;
+     font-weight: 600;
+     letter-spacing: 2px;
+     background: linear-gradient(135deg,rgb(233, 106, 226),rgb(40, 241, 124),rgb(75, 227, 247));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: animate 1.3s linear infinite;
+}
+@keyframes animate {
+   100%{
+     filter: hue-rotate(360deg);
+      }
+}
